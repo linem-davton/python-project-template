@@ -17,6 +17,7 @@ git commit -m "Initial commit"
 - [ ] Update the `README.md` file with your project details.
 - [ ] Update the `pyproject.toml` file with your project details.
 - [ ] Update requirements.txt files. Only used for development and CI environments.
+- [ ] Update `.envrc` file correct `PYTHONPATH` env variable.
 
 ## Build
 

@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "template-pkg"
+name = "template_pkg"
 version = "0.1.0"
 description = "Change this to your package description"
 authors = [{ name="Linem Davton", email="linemdavton@gmail.com" }]
