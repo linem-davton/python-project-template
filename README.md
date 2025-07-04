@@ -40,7 +40,7 @@ Note that the package name must be unique across both TestPyPI and PyPI.
 
 ```BASH
 twine upload --repository testpypi dist/* # Follow the prompt to enter your username/password
-pip install --index-url https://test.pypi.org/simple/ <your-package-name> # By default, pip will install from the official PyPI repository
+pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ <your-package-name> # By default, pip will install from the official PyPI repository
 ```
 
 ### PyPI
