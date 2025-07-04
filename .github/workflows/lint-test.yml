@@ -36,6 +36,6 @@ jobs:
       - name: Test with pytest
         env:
           # Set the PYTHONPATH to the current directory to ensure local imports work
-          PYTHONPATH: ${{ github.workspace }}
+          PYTHONPATH: ${{ github.workspace }}/src
         run: |
           pytest
