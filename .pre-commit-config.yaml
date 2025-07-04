@@ -3,3 +3,13 @@ repos:
     rev: v0.12.2
     hooks:
       - id: ruff
+
+  - repo: local
+    hooks:
+      - id: pytest
+        name: Run pytest before push
+        entry: pytest
+        language: system
+        args: ["--maxfail=3", "--disable-warnings"]
+        types: [python]
+        stages: [push]
