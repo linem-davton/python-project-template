@@ -10,6 +10,5 @@ repos:
         name: Run pytest before push
         entry: pytest
         language: system
-        args: ["--maxfail=3", "--disable-warnings"]
         types: [python]
         stages: [push]
