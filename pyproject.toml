@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "template_pkg"
-version = "0.1.0"
+version = "0.1.1"
 description = "Change this to your package description"
 authors = [{ name="Linem Davton", email="linemdavton@gmail.com" }]
 readme = "README.md"

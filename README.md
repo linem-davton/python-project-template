@@ -32,6 +32,10 @@ pip install -e . # For local development
 
 ## Publish
 
+Checklist for publishing your package:
+
+- [ ] Update the package version in `pyproject.toml`.
+
 ### TestPyPI
 
 [TestPyPI](https://test.pypi.org/) is a sandboxed version of the real Python Package Index.
@@ -39,12 +43,17 @@ It’s for testing your packaging, upload, and install process to make sure ever
 Note that the package name must be unique across both TestPyPI and PyPI.
 
 ```BASH
-twine upload --repository testpypi dist/* # Follow the prompt to enter your username/password
+twine upload --repository testpypi dist/* # Follow the prompt for API token
 pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ <your-package-name> # By default, pip will install from the official PyPI repository
 ```
 
 ### PyPI
 
 ```BASH
-twine upload dist/* # Follow the prompt to enter your username/password
+twine upload dist/* # Follow the prompt for API token
 ```
+
+## GitHub Actions
+
+This project includes a GitHub Actions workflow for continuous integration (CI) and continuous deployment (CD).
+The workflow is defined in `.github/workflows/ci.yml` and is triggered on push and pull request events to the `main` branch.
