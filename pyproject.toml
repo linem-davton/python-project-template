@@ -3,13 +3,17 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "hello-pkg"
+name = "template-pkg"
 version = "0.1.0"
-description = "A minimal Hello World Python package"
+description = "Change this to your package description"
 authors = [{ name="Linem Davton", email="linemdavton@gmail.com" }]
 readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.7"
+dependencies = [
+    "numpy>=2.0",
+    "matplotlib>=3.4",
+]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
